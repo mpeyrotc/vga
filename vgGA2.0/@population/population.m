@@ -29,7 +29,7 @@ function pop = population(type,varargin)
 %*                                                          *
 %************************************************************
 
-MAXIMIZATION = 1; % Default of params.max
+MAXIMIZATION = 0; % Default of params.max
 NO_FUNCTIONS = 1; % Initial value of params.noFunctions
 pop.params.max = MAXIMIZATION;
 pop.params.noFunctions = NO_FUNCTIONS;

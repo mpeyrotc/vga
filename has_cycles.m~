@@ -1,0 +1,14 @@
+function result = has_cycles(A)
+
+n = size(A,1);
+An = A; 
+
+result = false;
+
+for i = 1:n
+     An = An * A; % do not re-compute A^n from skratch
+     if trace(An) ~= 0
+        result = true;
+        break
+     end
+end
